@@ -1,0 +1,22 @@
+.topbar {
+    padding:1%;
+    height: 6.5vh;
+    max-height:64px;
+    display: flex;
+    width: 100%;
+    background-color: #E1005D;
+    justify-content: center;
+    box-sizing: border-box;
+    .questions {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 24px;
+        font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

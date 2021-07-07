@@ -1,0 +1,33 @@
+.root {
+    margin-top: 12px;
+    .paper {
+        padding: 32px;
+        .listTitle {
+            margin-bottom: 12px;
+        }
+        .gridLabel {
+            align-items: center;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .topActions {
+            display: flex;
+            // width:100%;
+            margin-left: auto;
+            align-items: center;
+        }
+    }
+}
+.columnMenu {
+    padding: 8px 12px!important;
+    // padding-right: 0!important;
+    // padding-top: 80px!important;
+}
+// .headers {
+//     max-width: none!important;
+//     min-width: none!important;
+//     width: 300px!important;
+//     &:last-of-type {
+//         flex: 2!important;
+//     }
+// }

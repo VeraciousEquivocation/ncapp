@@ -1,0 +1,35 @@
+Lists -> 
+[
+    {
+        name: Country
+        columns: [
+            {
+                name: region,
+                makesUnique: false,
+                isRegex: false,
+            },
+            {
+                name: market,
+                makesUnique: true,
+                isRegex: false,
+            },
+        ],
+        driveLookupName: regionmarket,
+        allowedValues: [
+            [
+                emea,
+                gbr,
+                great britain, // no regex checkbox on last value here
+            ],
+            [
+                emea,
+                ntd,
+                netherlands,
+            ],
+        ]
+    },
+]
+
+delete row, delete column
+
+import and export json
