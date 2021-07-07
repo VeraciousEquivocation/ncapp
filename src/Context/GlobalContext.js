@@ -8,13 +8,14 @@ export const GlobalContext = React.createContext();
 function GlobalContextProvider(props) {
     // const [data, setData] = useState(null);
     const [lists, setLists] = useState([]); //array of objects [{ field: value }] 
+    const [selectedList, setSelectedList] = useState(null);
     
     useEffect(()=>{
         const listsFromStorage = localStorage.getItem('validatorlists')
         if(listsFromStorage)
           setLists(listsFromStorage)
         else
-          setLists([])
+          setLists(tempData)
     },[])
 
     // const fetchData = useCallback(() => {
@@ -69,11 +70,15 @@ function GlobalContextProvider(props) {
     const contextMemoData = React.useMemo(() => (
         {
             lists,
+            selectedList,
             updateLists,
+            setSelectedList,
         }), 
         [
             lists,
+            selectedList,
             updateLists,
+            setSelectedList,
         ]
     );
 

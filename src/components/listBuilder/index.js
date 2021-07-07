@@ -25,9 +25,6 @@ import ViewColumnIcon from '@material-ui/icons/ViewColumn';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import Slide from '@material-ui/core/Slide';
 import Zoom from '@material-ui/core/Zoom';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogTitle from '@material-ui/core/DialogTitle';
 import Checkbox from '@material-ui/core/Checkbox';
 import Alert from './Alert'
 
@@ -176,8 +173,8 @@ const ListBuilder = () => {
   const [rows, setRows] = useState([]);
   const [fieldNames, setFieldNames] = useState([]);
   const [selectionModel, setSelectionModel] = useState([]);
-  const [selectedList, setSelectedList] = useState(null);
-  const {lists,updateLists} = useContext(GlobalContext)
+  // const [selectedList, setSelectedList] = useState(null);
+  const {lists,updateLists,selectedList, setSelectedList} = useContext(GlobalContext)
 
   useEffect(()=>{
     if(!firstRender) {
